@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <nav>
+      <div id="information">
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+      <div id="button_history">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+      </div>
+    </nav>
+
+    <aside id="calc_history_container" class="closeHistory">
+      <div id="cal_history_action">
+        <h2>History</h2>
+        <div>
+          <i class="fa-solid fa-trash-can" id="deleteHistory"></i>
+          <i class="fa-solid fa-xmark" id="closeHistory"></i>
+        </div>
+      </div>
+      <p>
+        It helps you to check previous calculations and use it to the current calc
+      </p>
+      <div id="calc_history_list">
+        <!-- histories -->
+      </div>
+
+      <div></div>
+    </aside>
+
+    <main>
+      <div id="calculator_container">
+        <!-- Calculation -->
+        <div id="calculation_container">
+          <div id="calculation_input">0</div>
+          <div id="calculation_preview">0</div>
+        </div>
+
+        <!-- Input Buttons -->
+        <div id="buttons_container">
+          <div class="pinky" id="button_clear">
+            <i class="fa-solid fa-c"></i>
+          </div>
+          <div class="pinky" id="button_percent">
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <div class="pinky" id="button_divide">
+            <i class="fa-solid fa-divide"></i>
+          </div>
+          <div class="purple" id="button_backspace">
+            <i class="fa-solid fa-delete-left"></i>
+          </div>
+
+          <div id="button_1">1</div>
+          <div id="button_2">2</div>
+          <div id="button_3">3</div>
+          <div class="purple" id="button_multiply">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div id="button_4">4</div>
+          <div id="button_5">5</div>
+          <div id="button_6">6</div>
+          <div class="purple" id="button_minus">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+
+          <div id="button_7">7</div>
+          <div id="button_8">8</div>
+          <div id="button_9">9</div>
+          <div class="purple" id="button_plus">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <div id="button_parentheses">( )</div>
+          <div id="button_0">0</div>
+          <div id="button_comma">,</div>
+          <div class="purple" id="button_equals">
+            <i class="fa-solid fa-equals"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="myscript.js"></script>
+</html>
