@@ -142,6 +142,7 @@ var calc_history = JSON.parse(localStorage.getItem('calc_history') || '[]');
 
 document.addEventListener("DOMContentLoaded", () => {
   updateDisplay();
+  updateHistory();
   const elementB = document.getElementById("buttons_container");
   const offSetTopB = elementB.offsetTop;
   const offsetHeight = elementB.offsetHeight;
@@ -407,6 +408,7 @@ equal.addEventListener("click", () => {
   expressions = [result.toString()];
   currentPos = 0;
   updateDisplay();
+  updateHistory();
   console.log(calc_history);
 });
 
