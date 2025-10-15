@@ -449,6 +449,7 @@ function updateHistory() {
 
   attachHistoryInputListener();
   attachHistoryResultListener();
+  console.log('history_updated');
 }
 
 updateHistory();
